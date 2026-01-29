@@ -7,6 +7,15 @@ type FieldColl struct {
 	y int
 }
 
+
+type User struct {
+    ID     int
+    Name   string
+    Email  string
+}
+
+
+
 func main() {
 	fmt.Println(FieldColl{2, 5})
 	b := FieldColl{20, 30}
@@ -18,4 +27,20 @@ func main() {
 
 	fmt.Println(b)
 	fmt.Println(*d)
+
+	u := User{
+		ID:   1,
+		Name: "Sangay",
+		Email: "example@gmail.com",
+	}
+
+	fmt.Println(u)
+
+	us := User{
+		1,
+		"Sangay  wangdi",
+		"wangdi@gmail.com",
+	}
+	
+	fmt.Println(us)
 }
