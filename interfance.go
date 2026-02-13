@@ -1,0 +1,22 @@
+package main
+
+import (
+    "fmt"
+)
+
+type Shape interface {
+    Area() float64
+}
+
+type Rectangle struct {
+    width, height float64
+}
+
+func (r Rectangle) Area() float64 {
+    return r.width * r.height
+}
+
+func main() {
+    r := Rectangle{width: 10, height: 6}
+    fmt.Println("Area:", r.Area())
+}
